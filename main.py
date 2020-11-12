@@ -28,13 +28,13 @@ knn.fit(x_train, y_train)
 x_new = np.array([[5, 2.9, 1, 0.2]])
 print("X_new shape: {}".format(x_new.shape))
 
-# getting the prediction by the artificial intelligence
+# getting the prediction by the ai
 
 prediction = knn.predict(x_new)
 print("Prediction: {}".format(prediction))
 print("Prediction target name: {}".format(iris_dataset['target_names'][prediction]))
 
-# checking if the result given by the ai is correct
+# checking if the result given by the ai is accurate enough lol
 
 actual_result = knn.predict(x_test)
 print("Actual target: {}".format(actual_result))
